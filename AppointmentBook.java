@@ -1,5 +1,8 @@
 public class AppointmentBook {
     
+    private boolean[][] schedule;
+
+    
     /**
      * Returns true if minute in period is available for an appointment and returns
      * false otherwise
