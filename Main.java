@@ -12,11 +12,11 @@ public class Main {
         System.out.println(a.findFreeBlock(2, 20));
 
         boolean[][] schedule2 = new boolean[8][60];
-        for (int i = 25; i < 30; i++) schedule1[2][i] = true;
-        for (int i = 0; i < 15; i++) schedule1[3][i] = true;
-        for (int i = 41; i < 60; i++) schedule1[3][i] = true;
-        for (int i = 5; i < 30; i++) schedule1[4][i] = true;
-        for (int i = 44; i < 60; i++) schedule1[4][i] = true;
+        for (int i = 25; i < 30; i++) schedule2[1][i] = true;
+        for (int i = 0; i < 15; i++) schedule2[2][i] = true;
+        for (int i = 41; i < 60; i++) schedule2[2][i] = true;
+        for (int i = 5; i < 30; i++) schedule2[3][i] = true;
+        for (int i = 44; i < 60; i++) schedule2[3][i] = true;
         AppointmentBook b = new AppointmentBook(schedule2);
         // makeAppointment test cases
         System.out.println(b.makeAppointment(2, 4, 22));

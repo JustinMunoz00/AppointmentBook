@@ -41,8 +41,7 @@ public class AppointmentBook {
             }
             else count = 0;
         }
-        return -1;
-    }
+        return -1;    }
 
     /**
      * Searches periods from startPeriod to endPeriod, inclusive, for a block
@@ -53,7 +52,7 @@ public class AppointmentBook {
      * Preconditions: 1 <= startPeriod <= endPeriod <= 8; 1 <= duration <= 60
      */
     public boolean makeAppointment(int startPeriod, int endPeriod, int duration){
-        for (int i = startPeriod; i < endPeriod+1; i++){
+        for (int i = startPeriod -1; i < endPeriod + 1; i++){
             int minute = findFreeBlock(i, duration);
             if (minute > -1){
                 reserveBlock(i, minute, duration);
